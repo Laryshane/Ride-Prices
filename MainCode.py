@@ -4,9 +4,9 @@
 # Change ride_type's in LINE 5 to desired titles.
 print("Ride Options: Normal, Mid Range or Luxury.")
 ride_type = input("What Type of Ride are you looking for?: ")
-print("How many Credits are in your account?")
+print("\nHow many Credits are in your account?")
 credits = float(input("Credits: "))
-print("How many Miles to Destination?:")
+print("\nHow many Miles to Destination?:")
 miles = float(input("Miles: "))
 
 # Change LINE 13's price to desired price.
@@ -23,10 +23,10 @@ elif ride_type == "Luxury":
 else:
   ride_price = 15.50
 
-print("Ride Price:")
+print("\nRide Price:")
 print(ride_price)
 
-print("Per Mile Price:")
+print("\nPer Mile Price:")
 print(per_mile)
 
 if credits > 0:
@@ -34,5 +34,5 @@ if credits > 0:
 else:
   final_price = ride_price + (miles * per_mile)
 
-print("Final Price after Credit: ")
+print("\nFinal Price after Credit: ")
 print(final_price)
